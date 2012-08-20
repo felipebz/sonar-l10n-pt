@@ -1,0 +1,19 @@
+<p>L'utilisation du l'instruction 'break' augmente la complexité
+	essentielle du code source et empêche ainsi tout refactoring de ce code
+	pour remplacer toutes les structures de contrôle bien structurées par
+	une seule instruction.</p>
+<p>Par exemple, pour l'exemple de code Java suivant, il n'est pas
+	possible d'appliquer le motif de refactoring "extraction de méthode" :
+</p>
+<pre>
+mylabel : for (int i = 0 ; i< 3; i++) {
+  for (int j = 0; j < 4 ; j++) {
+    doSomething();
+    if (checkSomething()) {
+      break mylabel;
+    }
+  }
+}
+</pre>
+<p>L'utilisation de l'instruction 'break' est seulement autorisée
+	dans un bloc 'switch'.</p>
