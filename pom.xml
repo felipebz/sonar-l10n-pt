@@ -60,6 +60,10 @@
       <id>marcos.junqueira</id>
       <name>Marcos Oliveira Junqueira</name>
     </developer>
+    <developer>
+      <id>marioct</id>
+      <name>Mario Celso Teixeira</name>
+    </developer>
   </developers>
 
   <build>
