@@ -24,14 +24,14 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.sonar.test.i18n.I18nMatchers.assertAllBundlesUpToDate;
+import static org.sonar.test.i18n.I18nMatchers.*;
 
 public class PortuguesePackPluginTest {
 
   /**
    * Version of Sonar which is covered by the language pack
    */
-  private static final String SONAR_VERSION = "3.0";
+  private static final String SONAR_VERSION = "3.3";
 
   /**
    * Bundles of the forge plugins covered by the language pack
@@ -48,7 +48,7 @@ public class PortuguesePackPluginTest {
 
   @Test
   public void test() throws Exception {
-//    assertAllBundlesUpToDate(SONAR_VERSION);
+//    assertBundlesUpToDate();
   }
 
 }
