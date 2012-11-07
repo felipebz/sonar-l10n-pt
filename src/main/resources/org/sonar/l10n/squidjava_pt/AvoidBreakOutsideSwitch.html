@@ -1,0 +1,13 @@
+<p>O uso da declaração 'break' aumenta a complexidade essencial do código fonte e assim evita qualquer refatoração do código fonte para substituir todas as estruturas de controle bem estruturados com uma única instrução.</p>
+<p>Por exemplo, com o seguinte fragmento de código java, não é possível aplicar o padrão de refatoração 'extrair método':</p>
+<pre>
+mylabel : for (int i = 0 ; i&lt; 3; i++) {
+  for (int j = 0; j &lt; 4 ; j++) {
+    doSomething();
+    if (checkSomething()) {
+      break mylabel;
+    }
+  }
+}
+</pre>
+<p>O uso da declaração 'break' só é permitido dentro de uma declaração 'switch'.</p>

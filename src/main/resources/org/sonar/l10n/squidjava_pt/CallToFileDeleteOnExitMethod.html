@@ -1,0 +1,5 @@
+<p>Uso do método File#deleteOnExit() não é recomendado pelos seguintes motivos:</p>
+<ul>
+  <li>A exclusão ocorrerá apenas em caso de encerramento normal da JVM, mas não quando a ela morre ou trava</li>
+  <li>Para cada manipulador de arquivo, a memória associada a este manipulador é liberada somente no final do processo</li>
+</ul>
