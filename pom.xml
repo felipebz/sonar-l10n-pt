@@ -16,6 +16,7 @@
     <name>L10n :: Portuguese Pack</name>
     <url>http://docs.codehaus.org/display/SONAR/Portuguese+Pack</url>
     <inceptionYear>2012</inceptionYear>
+    <description><![CDATA[Language pack for Portuguese]]></description>
 
     <licenses>
         <license>
