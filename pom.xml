@@ -116,6 +116,8 @@
         <developer>
             <id>marioct</id>
             <name>Mario Celso Teixeira</name>
+            <organization>Fundação CPqD</organization>
+            <organizationUrl>http://www.cpqd.com.br</organizationUrl>
         </developer>
     </developers>
 
