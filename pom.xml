@@ -54,6 +54,7 @@
         <bundle.checkstyle>3.3.2</bundle.checkstyle>
         <bundle.findbugs>3.3.2</bundle.findbugs>
         <bundle.branding>0.4</bundle.branding>
+		<bundle.jira>1.1</bundle.jira>
 	</properties>
 
     <dependencies>
@@ -109,6 +110,12 @@
 		  <groupId>org.codehaus.sonar-plugins</groupId>
 		  <artifactId>sonar-branding-plugin</artifactId>
 		  <version>${bundle.branding}</version>
+		  <scope>test</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.codehaus.sonar-plugins</groupId>
+		  <artifactId>sonar-jira-plugin</artifactId>
+		  <version>${bundle.jira}</version>
 		  <scope>test</scope>
 		</dependency>
 	</dependencies>
