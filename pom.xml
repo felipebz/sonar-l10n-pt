@@ -55,6 +55,7 @@
         <bundle.findbugs>3.3.2</bundle.findbugs>
         <bundle.branding>0.4</bundle.branding>
 		<bundle.jira>1.1</bundle.jira>
+		<bundle.timeline>1.3</bundle.timeline>
 	</properties>
 
     <dependencies>
@@ -116,6 +117,12 @@
 		  <groupId>org.codehaus.sonar-plugins</groupId>
 		  <artifactId>sonar-jira-plugin</artifactId>
 		  <version>${bundle.jira}</version>
+		  <scope>test</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.codehaus.sonar-plugins</groupId>
+		  <artifactId>sonar-timeline-plugin</artifactId>
+		  <version>${bundle.timeline}</version>
 		  <scope>test</scope>
 		</dependency>
 	</dependencies>
