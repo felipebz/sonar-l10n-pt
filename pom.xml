@@ -14,7 +14,7 @@
     <packaging>sonar-plugin</packaging>
 
     <name>L10n :: Portuguese Pack</name>
-    <description>Language pack for Portuguese</description>
+    <description>Language Pack for Portuguese</description>
     <url>http://docs.codehaus.org/display/SONAR/Portuguese+Pack</url>
     <inceptionYear>2012</inceptionYear>
 
