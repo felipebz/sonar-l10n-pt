@@ -1,6 +1,0 @@
-<p>Métodos privados que nunca são executados são código morto. Código morto significa que o código é inoperante e desnecessário e deve ser removido. Isto ajuda na manutenção, diminuindo o tamanho do código mantido, o que facilita a compreensão do programa e impedindo a introdução de erros.</p>
-<p>Nos dois casos seguintes, os métodos privados não são considerados como código morto pelo Sonar:</p>
-<ul>
-	<li>Construtores vazios privados que são intencionalmente utilizados para evitar qualquer instanciação direta de uma classe.</li>
-	<li>Métodos privados: readObject (...), writeObject (...), writeReplace (...), readResolve (...) que podem ser utilizados ao implementar a interface Serializable.</li>
-</ul>
