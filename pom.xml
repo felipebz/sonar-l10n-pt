@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.codehaus.sonar-plugins</groupId>
+        <groupId>org.sonarsource.parent</groupId>
         <artifactId>parent</artifactId>
-        <version>16</version>
+        <version>25</version>
     </parent>
 
     <groupId>org.codehaus.sonar-plugins.l10n</groupId>
@@ -45,87 +45,40 @@
 
     <properties>
         <sonar.pluginClass>org.sonar.plugins.l10n.PortuguesePackPlugin</sonar.pluginClass>
-        <sonar.version>3.5</sonar.version>
+        <sonar.version>5.3</sonar.version>
         
         <!-- Versions of the plugins translated by this language pack -->
-        <bundle.core>3.5</bundle.core>
-        <bundle.squidjava>1.2</bundle.squidjava>
-        <bundle.pmd>3.3.2</bundle.pmd>
-        <bundle.checkstyle>3.3.2</bundle.checkstyle>
-        <bundle.findbugs>3.3.2</bundle.findbugs>
-        <bundle.branding>0.4</bundle.branding>
-		<bundle.jira>1.1</bundle.jira>
-		<bundle.timeline>1.3</bundle.timeline>
+        <bundle.jira>1.2</bundle.jira>
+        <bundle.timeline>1.5</bundle.timeline>
 	</properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.codehaus.sonar</groupId>
+            <groupId>org.sonarsource.sonarqube</groupId>
             <artifactId>sonar-plugin-api</artifactId>
             <version>${sonar.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.sonar</groupId>
+            <groupId>org.sonarsource.sonarqube</groupId>
             <artifactId>sonar-testing-harness</artifactId>
             <version>${sonar.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- Dependencies to plugins which are translated by this language pack -->
         <dependency>
-            <groupId>org.codehaus.sonar.plugins</groupId>
-            <artifactId>sonar-core-plugin</artifactId>
-            <version>${bundle.core}</version>
-            <scope>test</scope>
+          <groupId>org.codehaus.sonar-plugins</groupId>
+          <artifactId>sonar-jira-plugin</artifactId>
+          <version>${bundle.jira}</version>
+          <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.sonar.plugins</groupId>
-            <artifactId>sonar-l10n-en-plugin</artifactId>
-            <version>${bundle.core}</version>
-            <scope>test</scope>
+          <groupId>org.codehaus.sonar-plugins</groupId>
+          <artifactId>sonar-timeline-plugin</artifactId>
+          <version>${bundle.timeline}</version>
+          <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar-plugins.java</groupId>
-            <artifactId>sonar-squid-java-plugin</artifactId>
-            <version>${bundle.squidjava}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar.plugins</groupId>
-            <artifactId>sonar-pmd-plugin</artifactId>
-            <version>${bundle.pmd}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar.plugins</groupId>
-            <artifactId>sonar-checkstyle-plugin</artifactId>
-            <version>${bundle.checkstyle}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.sonar.plugins</groupId>
-            <artifactId>sonar-findbugs-plugin</artifactId>
-            <version>${bundle.findbugs}</version>
-            <scope>test</scope>
-        </dependency>
-		<dependency>
-		  <groupId>org.codehaus.sonar-plugins</groupId>
-		  <artifactId>sonar-branding-plugin</artifactId>
-		  <version>${bundle.branding}</version>
-		  <scope>test</scope>
-		</dependency>
-		<dependency>
-		  <groupId>org.codehaus.sonar-plugins</groupId>
-		  <artifactId>sonar-jira-plugin</artifactId>
-		  <version>${bundle.jira}</version>
-		  <scope>test</scope>
-		</dependency>
-		<dependency>
-		  <groupId>org.codehaus.sonar-plugins</groupId>
-		  <artifactId>sonar-timeline-plugin</artifactId>
-		  <version>${bundle.timeline}</version>
-		  <scope>test</scope>
-		</dependency>
-	</dependencies>
+    </dependencies>
 
     <developers>
         <developer>
@@ -145,11 +98,10 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.sonar</groupId>
+                <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
                 <artifactId>sonar-packaging-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <basePlugin>l10nen</basePlugin>
                     <pluginName>Portuguese Pack</pluginName>
                     <pluginDescription><![CDATA[Language pack for Portuguese]]>
                     </pluginDescription>

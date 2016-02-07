@@ -1,3 +1,0 @@
-<p>
-Quando vários pacotes estão envolvidas num ciclo (pacote A &gt; pacote B &gt; pacote C &gt; pacote A onde "&gt;" significa "depende de"), o que significa que os pacotes são altamente acoplados e que não há maneira de reutilizar/extrair um desses pacotes, sem a importação de todos os outros pacotes. Tal ciclo pode rapidamente aumentar o esforço necessário para manter uma aplicação e para aceitar a mudança do negócio. O Sonar não só detecta ciclos entre os pacotes, mas também determina qual é o esforço mínimo para quebrar esses ciclos. Esta regra registra uma violação em cada arquivo fonte com uma dependência de saída, a fim de quebrar um ciclo.
-</p>
