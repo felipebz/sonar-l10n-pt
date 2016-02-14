@@ -20,20 +20,16 @@
 package org.sonar.plugins.l10n;
 
 import org.junit.Test;
-//import org.sonar.test.i18n.I18nMatchers;
+import org.sonar.test.i18n.I18nMatchers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PortuguesePackPluginTest {
 
-  /*
-   * Looks like SonarSource screwed this up in SQ 5.2 because the sonar-core isn't in the maven central repo.
-   * Uncomment when https://jira.sonarsource.com/browse/SONAR-7226 is fixed.
-   */
-  /*@Test
+  @Test
   public void bundles_should_be_up_to_date() {
     I18nMatchers.assertBundlesUpToDate();
-  }*/
+  }
 
   @Test
   public void should_not_have_extensions() {
