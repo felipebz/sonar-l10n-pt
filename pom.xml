@@ -19,7 +19,7 @@
     <inceptionYear>2012</inceptionYear>
 
     <organization>
-        <name>Neppo Tecnologia da Informação</name>
+        <name>Neppo Tecnologia da Informação and Felipe Zorzo</name>
         <url>http://www.neppo.com.br</url>
     </organization>
 
@@ -91,6 +91,11 @@
             <name>Mario Celso Teixeira</name>
             <organization>Fundação CPqD</organization>
             <organizationUrl>http://www.cpqd.com.br</organizationUrl>
+        </developer>
+        <developer>
+            <id>felipebz</id>
+            <name>Felipe Bernardo Zorzo</name>
+            <url>http://www.felipezorzo.com.br</url>
         </developer>
     </developers>
 
