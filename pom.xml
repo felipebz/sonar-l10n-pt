@@ -15,7 +15,7 @@
 
     <name>L10n :: Portuguese Pack</name>
     <description>Language Pack for Portuguese</description>
-    <url>http://docs.codehaus.org/display/SONAR/Portuguese+Pack</url>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt</url>
     <inceptionYear>2012</inceptionYear>
 
     <organization>
@@ -32,15 +32,15 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/SonarCommunity/sonar-l10n-pt.git</connection>
-        <developerConnection>scm:git:git@github.com:SonarCommunity/sonar-l10n-pt.git</developerConnection>
-        <url>https://github.com/SonarCommunity/sonar-l10n-pt</url>
+        <connection>scm:git:git://github.com/SonarQubeCommunity/sonar-l10n-pt.git</connection>
+        <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-l10n-pt.git</developerConnection>
+        <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt</url>
         <tag>HEAD</tag>
     </scm>
     
     <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/SonarCommunity/sonar-l10n-pt/issues</url>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt/issues</url>
   </issueManagement>
 
     <properties>
