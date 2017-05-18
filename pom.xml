@@ -15,12 +15,11 @@
 
     <name>L10n :: Portuguese Pack</name>
     <description>Language Pack for Portuguese</description>
-    <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt</url>
+    <url>https://github.com/felipebz/sonar-l10n-pt</url>
     <inceptionYear>2012</inceptionYear>
 
     <organization>
-        <name>Neppo Tecnologia da Informação</name>
-        <url>http://www.neppo.com.br</url>
+        <name>Felipe Zorzo</name>
     </organization>
 
     <licenses>
@@ -32,15 +31,15 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/SonarQubeCommunity/sonar-l10n-pt.git</connection>
-        <developerConnection>scm:git:git@github.com:SonarQubeCommunity/sonar-l10n-pt.git</developerConnection>
-        <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt</url>
+        <connection>scm:git:git://github.com/felipebz/sonar-l10n-pt.git</connection>
+        <developerConnection>scm:git:git@github.com:felipebz/sonar-l10n-pt.git</developerConnection>
+        <url>https://github.com/felipebz/sonar-l10n-pt</url>
         <tag>HEAD</tag>
     </scm>
     
     <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/SonarQubeCommunity/sonar-l10n-pt/issues</url>
+    <url>https://github.com/felipebz/sonar-l10n-pt/issues</url>
   </issueManagement>
 
     <properties>
@@ -50,7 +49,7 @@
         <!-- Versions of the plugins translated by this language pack -->
         <bundle.jira>1.2</bundle.jira>
         <bundle.timeline>1.5</bundle.timeline>
-	</properties>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -92,12 +91,23 @@
             <name>Marcos Oliveira Junqueira</name>
             <organization>Neppo Tecnologia da Informação</organization>
             <organizationUrl>http://www.neppo.com.br</organizationUrl>
+            <roles>
+                <role>former developer</role>
+            </roles>
         </developer>
         <developer>
             <id>marioct</id>
             <name>Mario Celso Teixeira</name>
             <organization>Fundação CPqD</organization>
             <organizationUrl>http://www.cpqd.com.br</organizationUrl>
+            <roles>
+                <role>former developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>felipebz</id>
+            <name>Felipe Zorzo</name>
+            <email>felipe.b.zorzo@gmail.com</email>
         </developer>
     </developers>
 
