@@ -1,5 +1,7 @@
 # sonar-l10n-pt
-SonarQube Portuguese Language Pack
+[![Build Status](https://travis-ci.org/felipebz/sonar-l10n-pt.svg?branch=master)](https://travis-ci.org/felipebz/sonar-l10n-pt)
+
+SonarQube Brazilian Portuguese Language Pack
 
 Installation
 --------
