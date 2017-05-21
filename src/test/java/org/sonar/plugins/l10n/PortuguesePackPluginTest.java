@@ -19,10 +19,9 @@
  */
 package org.sonar.plugins.l10n;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.sonar.test.i18n.I18nMatchers;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class PortuguesePackPluginTest {
 
@@ -33,6 +32,6 @@ public class PortuguesePackPluginTest {
 
   @Test
   public void should_not_have_extensions() {
-    assertThat(new PortuguesePackPlugin().getExtensions()).isEmpty();
+    Assert.assertTrue(new PortuguesePackPlugin().getExtensions().isEmpty());
   }
 }
