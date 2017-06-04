@@ -10,7 +10,7 @@
 
     <groupId>org.codehaus.sonar-plugins.l10n</groupId>
     <artifactId>sonar-l10n-pt-plugin</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>6.4-SNAPSHOT</version>
     <packaging>sonar-plugin</packaging>
 
     <name>L10n :: Brazilian Portuguese Pack</name>
