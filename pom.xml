@@ -13,8 +13,8 @@
     <version>1.2-SNAPSHOT</version>
     <packaging>sonar-plugin</packaging>
 
-    <name>L10n :: Portuguese Pack</name>
-    <description>Language Pack for Portuguese</description>
+    <name>L10n :: Brazilian Portuguese Pack</name>
+    <description>Language Pack for Brazilian Portuguese</description>
     <url>https://github.com/felipebz/sonar-l10n-pt</url>
     <inceptionYear>2012</inceptionYear>
 
