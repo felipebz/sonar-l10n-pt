@@ -21,6 +21,10 @@ package org.sonar.plugins.l10n;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.sonar.api.Plugin;
+import org.sonar.api.SonarQubeSide;
+import org.sonar.api.internal.SonarRuntimeImpl;
+import org.sonar.api.utils.Version;
 import org.sonar.test.i18n.I18nMatchers;
 
 public class PortuguesePackPluginTest {
@@ -32,6 +36,9 @@ public class PortuguesePackPluginTest {
 
   @Test
   public void should_not_have_extensions() {
-    Assert.assertTrue(new PortuguesePackPlugin().getExtensions().isEmpty());
+    Plugin.Context context = new Plugin.Context(SonarRuntimeImpl.forSonarQube(Version.create(6, 0), SonarQubeSide.SERVER));
+    PortuguesePackPlugin plugin = new PortuguesePackPlugin();
+    plugin.define(context);
+    Assert.assertTrue(context.getExtensions().isEmpty());
   }
 }
