@@ -1,5 +1,5 @@
 /*
- * L10n :: Portuguese Pack
+ * L10n :: Brazilian Portuguese Pack
  * Copyright (C) 2012-2016 SonarSource SA
  * mailto:contact AT sonarsource DOT com
  *
