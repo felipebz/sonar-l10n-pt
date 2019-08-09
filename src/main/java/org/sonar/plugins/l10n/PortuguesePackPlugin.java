@@ -1,7 +1,7 @@
 /*
  * L10n :: Brazilian Portuguese Pack
- * Copyright (C) 2012-2016 SonarSource SA
- * mailto:contact AT sonarsource DOT com
+ * Copyright (C) 2012-2019 Felipe Zorzo
+ * mailto:felipebzorzo AT gmail DOT com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
