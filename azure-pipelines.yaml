@@ -1,0 +1,15 @@
+pool:
+  vmImage: 'ubuntu-16.04'
+
+steps:
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'SonarCloud'
+    organization: 'felipebz-github'
+    scannerMode: 'Other'
+
+- task: Maven@3
+  inputs:
+    goals: 'org.jacoco:jacoco-maven-plugin:prepare-agent package org.jacoco:jacoco-maven-plugin:report'
+    jdkVersionOption: 1.11
+    sonarQubeRunAnalysis: true
